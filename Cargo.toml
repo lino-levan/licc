@@ -1,0 +1,14 @@
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Lino Le Van"]
+repository = "https://github.com/lino-levan/licc"
+
+[workspace]
+resolver = "2"
+members = [ "crates/c_parser",
+  "crates/c_preprocessor",
+  "crates/c_parser",
+  "crates/cli"
+]
