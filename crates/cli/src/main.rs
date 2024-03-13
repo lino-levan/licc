@@ -13,5 +13,5 @@ fn main() {
     let args = Args::parse();
 
     let processed = preprocess(args.path);
-    println!("{}", processed);
+    println!("{:?}", processed);
 }

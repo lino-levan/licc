@@ -9,3 +9,5 @@ repository.workspace = true
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+c_ast = { path = "../c_ast" }
+c_parser = { path = "../c_parser" }

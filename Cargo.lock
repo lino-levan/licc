@@ -51,12 +51,23 @@ dependencies = [
 ]
 
 [[package]]
+name = "c_ast"
+version = "0.1.0"
+
+[[package]]
 name = "c_parser"
 version = "0.1.0"
+dependencies = [
+ "c_ast",
+]
 
 [[package]]
 name = "c_preprocessor"
 version = "0.1.0"
+dependencies = [
+ "c_ast",
+ "c_parser",
+]
 
 [[package]]
 name = "clap"

@@ -10,5 +10,6 @@ resolver = "2"
 members = [ "crates/c_parser",
   "crates/c_preprocessor",
   "crates/c_parser",
+  "crates/c_ast",
   "crates/cli"
 ]

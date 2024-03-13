@@ -1,3 +1,4 @@
+#[derive(Debug)]
 pub enum Token {
     Identifier(String),
     Directive(String),
@@ -100,7 +101,6 @@ impl Iterator for Tokenizer {
             '}' => Some(Token::RightBrace),
             ';' => Some(Token::Semicolon),
             ' ' | '\n' | '\t' => {
-                self.index += 1;
                 self.next()
             }
             _ => None,
